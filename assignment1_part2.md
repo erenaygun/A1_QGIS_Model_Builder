@@ -51,16 +51,18 @@ Download the data for this assignment from [heiBox](https://heibox.uni-heidelber
 
 Use the command `gdalinfo` to answer the following questions about the **two DEM files**, e.g.
 
-1. What is the coordinate reference system (EPSG)? 
-2. What is the driver (file format)?
+1. What is the coordinate reference system (EPSG)?
+2. What is the driver (file format)? 
 3. What is the spatial resolution? (Don't forget to provide the units)
 
 #### 2.2 Creating a raster mosaic [4pt]
 
 1. Create a raster mosaic of the files _N45E014.hgt_ and _n45_e013_1arc_v3.tif_ using the command `gdal_merge`. The output file should be called _dem\_merge.tif_. 
+
 2. Create a raster mosaic of the files _N45E014.hgt_ and _n45_e013_1arc_v3.tif_ using the command `gdalbuildvrt`. The output file should be called _dem\_buildvrt.vrt_. 
+
 3. Answer the following questions based on the results and the GDAL documentation: 
-	* What is the difference between the two output files? 
+	* What is the difference between the two output files? What is the reason for this? 
 	* What might be an advantage of using `gdalbuildvrt` instead of `gdalmerge`?
  
 ### 3. Creating a GDAL/OGR script   
