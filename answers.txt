@@ -1,0 +1,42 @@
+Eren Aygün
+Matrikelnummer: 3528717
+Wintersemester 2021
+Seminar FOSSGIS
+Dozentin: Christina Ludwig
+Fachsemester: 1. Master
+Abgabetermin: 20.11.2020
+
+
+
+Assignment 1.1.: Automated GIS Analyses using the QGIS Model Builder
+
+Part 1
+
+With the help of the TWI the role of the local topography for runoff generation can be quantified
+(Qin et al. 2011 quoted in Pourali et al. p. 40) and the long term moisture availability for a particular a landscape 
+can be revealed (Kopecký and Čížková 2010 quoted in Pourali et al. p. 40).
+The use of TWI "in modelling hydrological processes, biological processes, vegetation patterns, and 
+studies in forests" (Hjerdt et al. 2004 quoted in Pourali et al. p. 40) have become widespread owing it to the ease, 
+with which it can be implemented, to its "simple physically-based principles without depending much on user inputs 
+and representing a consistent approach to the parameterisation of water movement 
+(Sörensen et al. 2006 quoted in Pourali et al. p. 40). It can be represented with the following formula:
+	
+				W = ln(a/tanβ)
+
+Where a stands for the upslope catchment area divided by the contour length along with the flow pathway, 
+and tanβ shows the steepest downslope direction, W being the TWI. 
+
+2 ) How are the TWI values related to the flood probability?
+
+Flood probabality rises with hiher TWI values. 
+
+Part 2
+------------------------------------------------
+1) Within GRASS GIS Tools there are three functionalities
+"r.topidx", "r.watershed" and "r.terraflow", which calculate the TWI directly. (cf. Mattivi et al. 2019, page 5, figure 4).
+
+2)If the user chooses Whitebox GAT Tools, a cross-platform open source geographic information system in the programming languages
+Java and Python,the two tools "Slope" and "SCA" can calculate the TWI (albeit with many intermediate steps).
+
+3) With SAGA GIS, under the section "Terrain Analysis - Hydrology", the tools "Topographic wetness index (twi)" 
+can be used in one or more steps as well as the "Saga wetness index" (cf. Mattivi et al. 2019, p.5. Fig.4).
